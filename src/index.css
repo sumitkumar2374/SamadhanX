@@ -1,0 +1,664 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #f7f9fc;
+  color: #172033;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  min-height: 76px;
+  padding: 0 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: #ffffff;
+  border-bottom: 1px solid #e8ebf0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #172033;
+  color: white;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.brand h2 {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #172033;
+}
+
+.brand span {
+  display: block;
+  margin-top: 3px;
+  font-size: 10px;
+  color: #7b8495;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  flex: 1;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #596274;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #172033;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.signin {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4e586b;
+  white-space: nowrap;
+}
+
+.report-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 15px;
+  border-radius: 9px;
+  background: #172033;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Hero Section */
+
+.hero {
+  min-height: calc(100vh - 76px);
+  padding: 80px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 7px 13px;
+  margin-bottom: 22px;
+  border: 1px solid #dfe4ec;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #596274;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  color: #172033;
+  margin-bottom: 24px;
+}
+
+.hero h1 span {
+  color: #5266d8;
+}
+
+.hero p {
+  max-width: 590px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #697386;
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 13px 20px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn {
+  border: none;
+  background: #172033;
+  color: white;
+}
+
+.secondary-btn {
+  border: 1px solid #dce1e9;
+  background: white;
+  color: #172033;
+}
+
+.hero-visual {
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.visual-card {
+  padding: 38px;
+  border: 1px solid #e1e6ee;
+  border-radius: 22px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(23, 32, 51, 0.08);
+}
+
+.visual-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #eef1ff;
+  color: #5266d8;
+  font-size: 25px;
+}
+
+.visual-card h3 {
+  font-size: 17px;
+  color: #172033;
+}
+
+.visual-arrow {
+  margin: 13px 0;
+  color: #9aa3b2;
+}
+
+/* How It Works */
+
+.how-it-works {
+  padding: 100px 7%;
+  background: #ffffff;
+}
+
+.section-heading {
+  max-width: 650px;
+  margin-bottom: 55px;
+}
+
+.section-heading > span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #5266d8;
+}
+
+.section-heading h2 {
+  margin-top: 14px;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+  color: #172033;
+}
+
+.section-heading h2 strong {
+  color: #5266d8;
+}
+
+.section-heading p {
+  margin-top: 18px;
+  max-width: 570px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #697386;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.step-card {
+  padding: 26px;
+  border: 1px solid #e7eaf0;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.step-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.step-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #eef1ff;
+  color: #5266d8;
+}
+
+.step-top > span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #a0a8b7;
+}
+
+.step-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #172033;
+}
+
+.step-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #737d8e;
+}
+
+/* Collaboration Section */
+
+.collaboration {
+  padding: 100px 7%;
+  background: #f7f9fc;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.partner-card {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-radius: 16px;
+}
+
+.partner-icon {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #eef1ff;
+  color: #5266d8;
+}
+
+.partner-card h3 {
+  margin-bottom: 9px;
+  font-size: 18px;
+  color: #172033;
+}
+
+.partner-card p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #737d8e;
+}
+
+/* Featured Challenges */
+
+.featured-challenges {
+  padding: 100px 7%;
+  background: #ffffff;
+}
+
+.challenge-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.challenge-heading > div > span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #5266d8;
+}
+
+.challenge-heading h2 {
+  margin-top: 14px;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+  color: #172033;
+}
+
+.challenge-heading h2 strong {
+  color: #5266d8;
+}
+
+.view-all-btn {
+  padding: 11px 17px;
+  border: 1px solid #dce1e9;
+  border-radius: 9px;
+  background: white;
+  color: #172033;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.challenge-card {
+  padding: 26px;
+  border: 1px solid #e5e9f0;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.challenge-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.category,
+.status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.category {
+  background: #eef1ff;
+  color: #5266d8;
+}
+
+.status {
+  background: #edf8f1;
+  color: #368356;
+}
+
+.challenge-card h3 {
+  min-height: 55px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #172033;
+}
+
+.challenge-card p {
+  margin-bottom: 25px;
+  font-size: 13px;
+  color: #7a8392;
+}
+
+.challenge-btn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #5266d8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Impact Stats */
+
+.impact-stats {
+  padding: 100px 7%;
+  background: #f7f9fc;
+}
+
+.impact-intro {
+  margin-bottom: 45px;
+}
+
+.impact-intro > span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #5266d8;
+}
+
+.impact-intro h2 {
+  margin-top: 14px;
+  font-size: 40px;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: #172033;
+}
+
+.impact-intro h2 strong {
+  color: #5266d8;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.stat-card {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-radius: 16px;
+}
+
+.stat-card h3 {
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #172033;
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #737d8e;
+}
+
+/* Submit Challenge */
+
+.submit-page {
+  min-height: calc(100vh - 76px);
+  padding: 90px 7% 110px;
+  background: #f7f9fc;
+}
+
+.submit-header {
+  max-width: 720px;
+  margin-bottom: 45px;
+}
+
+.submit-header > span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #5266d8;
+}
+
+.submit-header h1 {
+  margin-top: 14px;
+  font-size: 48px;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  color: #172033;
+}
+
+.submit-header h1 strong {
+  color: #5266d8;
+}
+
+.submit-header p {
+  max-width: 620px;
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #697386;
+}
+
+.challenge-form {
+  max-width: 850px;
+  padding: 35px;
+  border: 1px solid #e3e7ee;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(23, 32, 51, 0.06);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #30394b;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dce1e9;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #172033;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a0a8b7;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #5266d8;
+  box-shadow: 0 0 0 3px rgba(82, 102, 216, 0.08);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.submit-challenge-btn {
+  width: 100%;
+  margin-top: 5px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 9px;
+  background: #172033;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.submit-challenge-btn:hover {
+  background: #5266d8;
+  transform: translateY(-1px);
+}
+
+/* Submit Challenge Responsive */
+
+@media (max-width: 768px) {
+  .submit-page {
+    padding: 65px 5% 80px;
+  }
+
+  .submit-header h1 {
+    font-size: 38px;
+  }
+
+  .challenge-form {
+    padding: 25px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
