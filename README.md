@@ -1,4 +1,4 @@
-# MadTechX 🚀
+# SamadhanX 🚀
 
 > A collaborative digital platform that connects citizens, universities, industry, and government to solve real-world societal challenges.
 
@@ -8,13 +8,13 @@
 
 Many real-world problems faced by communities remain unsolved because the right people, institutions, expertise, and resources are not connected effectively.
 
-MadTechX aims to create a common platform where societal challenges can be reported, analyzed, matched with suitable universities, and developed into practical solutions through collaboration with industry and government.
+SamadhanX aims to create a common platform where societal challenges can be reported, analyzed, matched with suitable universities, and developed into practical solutions through collaboration with industry and government.
 
 ---
 
 ## 💡 Solution
 
-MadTechX follows a collaborative problem-solving workflow:
+SamadhanX follows a collaborative problem-solving workflow:
 
 **Citizen → Challenge → AI Analysis → University Matching → Collaboration → Solution → Impact**
 
@@ -99,9 +99,10 @@ The platform can be extended with:
 ## 📁 Project Structure
 
 ```text
-MadTechX/
+SamadhanX/
 │
 ├── public/
+│   └── samadhanx-icon.svg
 │
 ├── src/
 │   ├── assets/
@@ -116,9 +117,18 @@ MadTechX/
 │   ├── pages/
 │   │   ├── Home.jsx
 │   │   ├── HowItWorks.jsx
-│   │   └── SubmitChallenge.jsx
-│   │
-│   ├── data/
+│   │   ├── SubmitChallenge.jsx
+│   │   ├── AIAnalysis.jsx
+│   │   ├── RecommendedUniversities.jsx
+│   │   ├── ChallengeExplorer.jsx
+│   │   ├── UniversityDashboard.jsx
+│   │   ├── IndustryCollaboration.jsx
+│   │   ├── GovernmentDashboard.jsx
+│   │   ├── ProjectTracking.jsx
+│   │   ├── ChallengeDetails.jsx
+│   │   ├── CollaborationRequest.jsx
+│   │   ├── Notifications.jsx
+│   │   └── SignIn.jsx
 │   │
 │   ├── App.jsx
 │   ├── index.css
@@ -126,6 +136,7 @@ MadTechX/
 │
 ├── .gitignore
 ├── package.json
+├── PROJECT_CONTEXT.md
 └── README.md
 ```
 
@@ -148,13 +159,13 @@ Fork this repository to your GitHub account.
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/MadTechX.git
+git clone https://github.com/YOUR-USERNAME/SamadhanX.git
 ```
 
 ### 3. Open the Project
 
 ```bash
-cd MadTechX
+cd SamadhanX
 ```
 
 ### 4. Install Dependencies
@@ -232,7 +243,7 @@ VITE_API_URL=your_api_url
 
 ### Implemented
 
-- [x] MadTechX landing page
+- [x] SamadhanX landing page
 - [x] Navigation
 - [x] How It Works page
 - [x] Challenge submission interface
@@ -292,9 +303,15 @@ VITE_API_URL=your_api_url
 
 ## 🌟 Vision
 
-MadTechX aims to build a collaborative ecosystem where real-world problems can reach the right people, institutions, and resources.
+SamadhanX aims to build a collaborative ecosystem where real-world problems can reach the right people, institutions, and resources.
 
 > **Identify Problems. Connect Expertise. Build Solutions. Create Impact.**
+
+---
+
+## 👨‍💻 Team
+
+**MadTecX**
 
 ---
 

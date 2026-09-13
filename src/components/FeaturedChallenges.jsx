@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 const challenges = [
   {
     category: "Education",
@@ -20,6 +21,7 @@ const challenges = [
 ];
 
 function FeaturedChallenges() {
+  const navigate = useNavigate();
   return (
     <section className="featured-challenges">
       <div className="challenge-heading">
@@ -33,7 +35,10 @@ function FeaturedChallenges() {
           </h2>
         </div>
 
-        <button className="view-all-btn">
+        <button
+          className="view-all-btn"
+          onClick={() => navigate("/challenges")}
+        >
           View All Challenges →
         </button>
       </div>
@@ -42,20 +47,21 @@ function FeaturedChallenges() {
         {challenges.map((challenge) => (
           <div className="challenge-card" key={challenge.title}>
             <div className="challenge-top">
-              <span className="category">
-                {challenge.category}
-              </span>
+              <span className="category">{challenge.category}</span>
 
-              <span className="status">
-                {challenge.status}
-              </span>
+              <span className="status">{challenge.status}</span>
             </div>
 
             <h3>{challenge.title}</h3>
 
             <p>📍 {challenge.location}</p>
 
-            <button className="challenge-btn">
+            <button
+              className="challenge-btn"
+              onClick={() =>
+                navigate("/challenge-details", { state: challenge })
+              }
+            >
               View Challenge →
             </button>
           </div>

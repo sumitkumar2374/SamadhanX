@@ -65,8 +65,8 @@ function HowItWorks() {
         </h2>
 
         <p>
-          MadTechX brings the right people and organizations together
-          to turn meaningful challenges into practical solutions.
+          SamadhanX brings the right people and organizations together to turn
+          meaningful challenges into practical solutions.
         </p>
       </div>
 

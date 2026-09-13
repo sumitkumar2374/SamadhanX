@@ -2,9 +2,7 @@ function Hero() {
   return (
     <main className="hero">
       <div className="hero-content">
-        <span className="hero-badge">
-          Smart Innovation Platform
-        </span>
+        <span className="hero-badge">Smart Innovation Platform</span>
 
         <h1>
           Turn Real-World Challenges
@@ -13,17 +11,22 @@ function Hero() {
         </h1>
 
         <p>
-          MadTechX connects citizens, universities, students,
-          industries, and government to collaboratively solve
-          meaningful societal challenges.
+          SamadhanX connects citizens, universities, students, industries, and
+          government to collaboratively solve meaningful societal challenges.
         </p>
 
         <div className="hero-actions">
-          <button className="primary-btn">
+          <button
+            className="primary-btn"
+            onClick={() => (window.location.href = "/submit")}
+          >
             Report a Challenge
           </button>
 
-          <button className="secondary-btn">
+          <button
+            className="secondary-btn"
+            onClick={() => (window.location.href = "/challenges")}
+          >
             Explore Challenges
           </button>
         </div>
@@ -48,4 +51,4 @@ function Hero() {
   );
 }
 
-export default Hero; 
+export default Hero;
