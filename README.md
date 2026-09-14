@@ -22,6 +22,24 @@ The platform helps different stakeholders work together throughout the complete 
 
 ---
 
+## 🔄 Platform Workflow
+
+```mermaid
+flowchart LR
+    A[Citizen] --> B[Submit Challenge]
+    B --> C[AI-Assisted Analysis]
+    C --> D[Category + Priority + Tags]
+    D --> E[Recommended Universities]
+    E --> F[University Team]
+    F --> G[Industry Collaboration]
+    G --> H[Solution Development]
+    H --> I[Project Tracking]
+    I --> J[Government Dashboard]
+    J --> K[Social Impact]
+```
+
+---
+
 ## 🚀 Key Features
 
 - 📝 **Citizen Challenge Submission**  
