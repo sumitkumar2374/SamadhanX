@@ -25,17 +25,41 @@ The platform helps different stakeholders work together throughout the complete 
 ## 🔄 Platform Workflow
 
 ```mermaid
-flowchart LR
-    A[Citizen] --> B[Submit Challenge]
+ flowchart TD 
+
+    A[Citizen / Organization] --> B[Submit Societal Challenge]
+
     B --> C[AI-Assisted Analysis]
-    C --> D[Category + Priority + Tags]
-    D --> E[Recommended Universities]
-    E --> F[University Team]
-    F --> G[Industry Collaboration]
-    G --> H[Solution Development]
-    H --> I[Project Tracking]
-    I --> J[Government Dashboard]
-    J --> K[Social Impact]
+
+    C --> D{Challenge Processing}
+
+    D --> E[Category & Priority]
+    D --> F[Tags & Similarity Check]
+    D --> G[Location & Requirements]
+
+    E --> H[University Matching]
+    F --> H
+    G --> H
+
+    H --> I{Stakeholder Collaboration}
+
+    I --> J[University Team]
+    I --> K[Industry / Startup]
+    I --> L[Government / Local Body]
+
+    J --> M[Solution Proposal]
+    K --> M
+    L --> M
+
+    M --> N[Prototype & Testing]
+
+    N --> O[Project Tracking]
+
+    O --> P[Government Dashboard]
+    O --> Q[Progress & Milestones]
+
+    P --> R[Social Impact]
+    Q --> R
 ```
 
 ---
