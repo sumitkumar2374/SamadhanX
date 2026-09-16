@@ -2683,7 +2683,7 @@ a {
     padding: 65px 5%;
   }
 
-  .collaboration-grid {
+  .partner-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -2693,11 +2693,11 @@ a {
     padding: 55px 5%;
   }
 
-  .collaboration-grid {
+  .partner-grid {
     grid-template-columns: 1fr;
   }
 
-  .collaboration-card {
+  .partner-card {
     padding: 24px;
   }
 }
@@ -2750,6 +2750,9 @@ a {
 @media (max-width: 900px) {
   .impact-stats {
     padding: 55px 5%;
+  }
+
+  .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -2757,10 +2760,13 @@ a {
 @media (max-width: 600px) {
   .impact-stats {
     padding: 45px 5%;
+  }
+
+  .stats-grid {
     grid-template-columns: 1fr;
   }
 
-  .impact-stat {
+  .stat-card {
     padding: 22px;
   }
 }
