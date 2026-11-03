@@ -6,15 +6,15 @@
 
 ## 🌍 Problem
 
-Many real-world problems faced by communities remain unsolved because the right people, institutions, expertise, and resources are not connected effectively.
+Many `real-world` problems faced by communities remain unsolved because the right people, institutions, expertise, and resources are not connected effectively.
 
-SamadhanX aims to create a common platform where societal challenges can be reported, analyzed, matched with suitable universities, and developed into practical solutions through collaboration with industry and government.
+SamadhanX aims to create a common `platform` where societal challenges can be reported, analyzed, matched with suitable universities, and developed into practical solutions through collaboration with industry and government.
 
 ---
 
 ## 💡 Solution
 
-SamadhanX follows a collaborative problem-solving workflow:
+`SamadhanX` follows a collaborative problem-solving workflow:
 
 **Citizen → Challenge → AI Analysis → University Matching → Collaboration → Solution → Impact**
 
