@@ -21,47 +21,52 @@ SamadhanX aims to create a common `platform` where societal challenges can be `r
 The platform helps different stakeholders work together throughout the complete lifecycle of a societal challenge.
 
 ---
-
 ## 🔄 Platform Workflow
 
 ```mermaid
- flowchart TD 
 
-    A[Citizen / Organization] --> B[Submit Societal Challenge]
+flowchart TD
+    A["👤 Citizen / Organization"] --> B["📝 Submit Societal Challenge"]
+    B --> C["🤖 AI-Assisted Analysis"]
 
-    B --> C[AI-Assisted Analysis]
+    C --> D{"Challenge Processing"}
 
-    C --> D{Challenge Processing}
+    D --> E["Category & Priority"]
+    D --> F["Tags & Similarity"]
+    D --> G["Location & Requirements"]
 
-    D --> E[Category & Priority]
-    D --> F[Tags & Similarity Check]
-    D --> G[Location & Requirements]
-
-    E --> H[University Matching]
+    E --> H["🎓 University Matching"]
     F --> H
     G --> H
 
-    H --> I{Stakeholder Collaboration}
+    H --> I{"🤝 Collaboration"}
 
-    I --> J[University Team]
-    I --> K[Industry / Startup]
-    I --> L[Government / Local Body]
+    I --> J["University Team"]
+    I --> K["Industry / Startup"]
+    I --> L["Government / Local Body"]
 
-    J --> M[Solution Proposal]
+    J --> M["💡 Solution Proposal"]
     K --> M
     L --> M
 
-    M --> N[Prototype & Testing]
+    M --> N["🧪 Prototype & Testing"]
+    N --> O["📊 Project Tracking"]
 
-    N --> O[Project Tracking]
+    O --> P["Government Dashboard"]
+    O --> Q["Progress & Milestones"]
 
-    O --> P[Government Dashboard]
-    O --> Q[Progress & Milestones]
-
-    P --> R[Social Impact]
+    P --> R["🌍 Social Impact"]
     Q --> R
-```
 
+    style A fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+    style C fill:#f3e8ff,stroke:#9333ea,color:#581c87
+    style D fill:#fef3c7,stroke:#d97706,color:#78350f
+    style H fill:#dcfce7,stroke:#16a34a,color:#14532d
+    style I fill:#fef3c7,stroke:#d97706,color:#78350f
+    style M fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    style R fill:#dcfce7,stroke:#16a34a,color:#14532d
+```
+ 
 ---
 
 ## 🚀 Key Features
